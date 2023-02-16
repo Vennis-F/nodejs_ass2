@@ -10,5 +10,4 @@ playersRouter
   .get(playerController.formEdit)
   .post(playerController.edit);
 playersRouter.route("/delete/:playerId").get(playerController.delete);
-
 module.exports = playersRouter;

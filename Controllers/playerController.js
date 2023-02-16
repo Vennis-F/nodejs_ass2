@@ -13,8 +13,6 @@ let clubData = [
 
 class PlayerController {
   index(req, res, next) {
-    console.log("hello");
-    console.log(Players);
     Players.find({})
       .then((players) => {
         res.render("players", {
@@ -26,7 +24,6 @@ class PlayerController {
   }
   create(req, res, next) {
     const player = new Players(req.body);
-    console.log(req.body.image);
     player
       .save()
       .then(() => res.redirect("/players"))
@@ -36,6 +33,7 @@ class PlayerController {
   }
   formEdit(req, res, next) {
     const playerId = req.params.playerId;
+    console.log("Hello world!", playerId);
     let viewsData = {};
     Players.findById(playerId)
       .then((player) => {

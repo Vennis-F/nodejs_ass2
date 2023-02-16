@@ -3,6 +3,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
+/* FORM */
 form {
   width: 50%;
   margin: 20px auto;
@@ -47,6 +48,8 @@ form {
   font-weight: bold;
 }
 
+/* TABLE */
+
 table {
   width: 80%;
   margin: 20px auto;
@@ -86,6 +89,45 @@ th {
 }
 
 .image img {
-  width: 20px;
-  height: 20px;
+  width: 140px;
+  height: 100px;
+}
+
+/* NAVIGATION */
+nav {
+  background-color: #00b5ad;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+nav .logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+nav li a:hover {
+  text-decoration: underline;
 }
